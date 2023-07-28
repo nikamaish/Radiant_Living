@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <!-- <link rel="stylesheet" href="home.css" /> -->
+    <link rel="stylesheet" href="../static/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      
+  </head>
+
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="../static/menu.png" class="menu-img" />
+        <img src="../static/logo.png" class="logo" />
+
+        <ul>
+          <li><a href="./index.html">Home </a></li>
+          <li><a href="./templates/product.html">Products</a></li>
+          <li><a href="./templates/contactUs.html">Contact Us</a></li>
+          <li><a href="./templates/orders.html">Order</a></li>
+        </ul>
+
+        <button type="button" onclick="toggleBtn()" id="btn">
+          <span></span>
+        </button>
+      </nav>
+
+      <div class="lamp-container">
+        <img src="../static/lamp.png" class="lamp" />
+        <img src="../static/light.png" class="light" id="light" />
+      </div>
+    </div>
+
+    <script>
+      var btn = document.getElementById("btn");
+      var light = document.getElementById("light");
+
+      function toggleBtn() {
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+      }
+    </script>
+
+
+
+<div class="animation">
+  <div class="wrapper">
+      <div class="static-txt">
+          <pre>
+   <h1>
+      Light It 
+  
+      
+      Up Like 
+      </h1>
+          </pre> 
+      </div>
+  
+      <ul class="dynamic-txts">
+      <li><span>Fire</span></li>
+      <li><span>&</span></li>
+      <li><span>Diamond</span></li>
+      </ul>
+      </div>
+      </div> 
+
+
+      <div class="text-container">
+        <a href="./product.html">Check All Collection</a>
+      </div>
+  
+
+  </body>
+</html>
