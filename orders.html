@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    
+
+    
+     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="orders.css"> 
+</head>
+<body>
+    
+  <div class="hero">
+    <nav>
+        <img src="menu.png" class="menu-img" />
+        <img src="logo.png" class="logo" />
+
+      <ul>
+        <li><a href="index.html">Home </a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="orders.html">Order</a></li>
+                <a href="logIn.html"><img src="icons8-login-48.png" class="log-in"  ></a>
+      </ul>
+      </div>
+
+      <div class="container">
+        <form action='/Lights' method="post">
+
+            <div class="row">
+    
+                <div class="col">
+                       
+                    <h3 class="title">billing address</h3>
+    
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text" name="fullName">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" name="email" >
+                    </div>
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text " name="address" placeholder="street">
+                    </div>
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input type="text" name="city" >
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>state :</span>
+                            <input type="text"  name="state">
+                        </div>
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="text"  name="zipCode">
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="col">
+    
+                    <h3 class="title">payment</h3>
+    
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="../static/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" name="cName" >
+                    </div>
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="number" name="cardNo">
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" name="expMonth" >
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" name="expYear">
+                        </div>
+                        <!-- <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="1234">
+                        </div> -->
+                    </div>
+    
+                </div>
+        
+            </div>
+    
+            <input type="submit" value="Order" class="submit-btn">
+    
+        </form>
+    
+    </div>    
+
+</body>
+</html>
